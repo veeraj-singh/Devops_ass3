@@ -1,9 +1,7 @@
-// Import required modules
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middleware to parse JSON bodies
 app.use(express.json());
 
 // Sample data
@@ -11,6 +9,7 @@ const users = [
     { id: 1, name: 'John Doe', email: 'john@example.com', role: 'user' },
     { id: 2, name: 'Jane Smith', email: 'jane@example.com', role: 'admin' },
     { id: 3, name: 'Bob Wilson', email: 'bob@example.com', role: 'user' }
+    { id: 4, name: 'Veeraj Singh', email: 'veer@example.com', role: 'admin' }
 ];
 
 const products = [
